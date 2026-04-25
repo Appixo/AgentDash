@@ -1,0 +1,24 @@
+{
+  "name": "agentdash-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AgentDash frontend — Next.js dashboard that renders agent events streamed from the backend over WebSockets.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.12.7",
+    "socket.io-client": "^4.7.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6"
+  }
+}

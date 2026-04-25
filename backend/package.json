@@ -1,0 +1,23 @@
+{
+  "name": "agentdash-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AgentDash backend — wraps an AI CLI child process and streams structured events to the dashboard via WebSockets.",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon --ignore projects.config.json src/server.js",
+    "dev:dummy": "cross-env AGENT_MODE=dummy nodemon --ignore projects.config.json src/server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.9.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.1.0"
+  }
+}

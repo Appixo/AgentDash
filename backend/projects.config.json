@@ -1,0 +1,19 @@
+{
+  "$comment": "AgentDash auto-discovers Claude Code sessions from ~/.claude/projects.",
+  "$comment_2": "Use this file ONLY to wrap additional non-Claude CLIs as projects.",
+  "$comment_3": "Each entry must be mode=spawn and define cmd/args/projectPath/agent metadata.",
+
+  "projects": [],
+
+  "$spawn_example": {
+    "projectId": "proj-custom-cli",
+    "projectName": "MyCustomAgent",
+    "projectPath": "C:/path/to/your/project",
+    "agentName": "Worker",
+    "agentRole": "coder",
+    "model": "gpt-4o",
+    "mode": "spawn",
+    "cmd": "node",
+    "args": ["scripts/agent.js"]
+  }
+}
